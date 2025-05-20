@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Grupo: 10
+  Alumnos:
+  - Darío Márquez Ibáñez
+  - David Márquez Ibáñez
+ -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:backgroundTint="#606c38"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.CamarasMadridLight.CobertorAppBar">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/Theme.CamarasMadridLight.CobertorPopup">
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <fragment
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="10"
+    tools:context="dam.camarasmadrid2410.MapsActivity">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|start"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="?attr/colorPrimary"
+            app:tint="@color/white"
+            map:srcCompat="@android:drawable/ic_dialog_map" />
+    </fragment>
+
+    <RadioGroup
+        android:id="@+id/vistas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:checkedButton="@+id/rbtn_normal"
+        android:background="?attr/colorPrimary">
+        <RadioButton
+            android:id="@+id/rbtn_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/mode_normal"
+            android:textStyle="bold"
+            android:textColor="?attr/colorPrimaryVariant"
+            android:buttonTint="?attr/colorPrimaryVariant"
+            android:onClick="modeNormal" />
+        <RadioButton
+            android:id="@+id/rbtn_satellite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/mode_satellite"
+            android:textStyle="bold"
+            android:textColor="?attr/colorPrimaryVariant"
+            android:buttonTint="?attr/colorPrimaryVariant"
+            android:onClick="modeSatellite"/>
+        <RadioButton
+            android:id="@+id/rbtn_hybrid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/mode_hybrid"
+            android:textStyle="bold"
+            android:textColor="?attr/colorPrimaryVariant"
+            android:buttonTint="?attr/colorPrimaryVariant"
+            android:onClick="modeHybrid"/>
+        <RadioButton
+            android:id="@+id/rbtn_terrain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/mode_terrain"
+            android:textStyle="bold"
+            android:textColor="?attr/colorPrimaryVariant"
+            android:buttonTint="?attr/colorPrimaryVariant"
+            android:onClick="modeTerrain"/>
+    </RadioGroup>
+
+</LinearLayout>

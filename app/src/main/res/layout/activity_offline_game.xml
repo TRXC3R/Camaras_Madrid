@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="?attr/colorPrimary">
+
+    <TextView
+        android:id="@+id/scoreText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Puntuación: 0"
+        android:textColor="?attr/colorPrimaryVariant"
+        android:layout_margin="50dp"
+        android:textSize="24sp"/>
+
+    <ImageButton
+        android:id="@+id/gameButton"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:scaleType="fitCenter"
+        android:background="@color/purple_200"
+        android:src="@drawable/click_icon"
+        android:textSize="20sp"/>
+
+</LinearLayout>

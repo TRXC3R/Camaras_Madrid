@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/progreso"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/carga"
+            android:textSize="18dp" />
+        <ProgressBar
+            style="?android:attr/progressBarStyle"
+            android:layout_marginVertical="30dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:indeterminate="true"/>
+        <TextView
+            android:id="@+id/progresoContador"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/contenedorListaCamaras"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        tools:layout="@layout/fragmento_listado"/>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/contenedorDetalleCamaras"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        tools:layout="@layout/fragmento_detalle"
+        android:visibility="visible"/>
+
+</LinearLayout>

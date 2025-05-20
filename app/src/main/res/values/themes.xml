@@ -1,0 +1,67 @@
+<!--
+  Grupo: 10
+  Alumnos:
+  - Darío Márquez Ibáñez
+  - David Márquez Ibáñez
+ -->
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.CamarasMadridLight" parent="Theme.MaterialComponents.DayNight">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#C8C8C8</item>
+        <item name="colorPrimaryVariant">@color/black</item>
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/black</item> <!--Ruedecita-->
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="Theme.CamarasMadridDark" parent="Theme.MaterialComponents.DayNight">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryVariant">@color/white</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/black</item> <!--Ruedecita-->
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="Theme.CamarasMadridLight.SinActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.CamarasMadridLight.CobertorAppBar"
+        parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:titleTextColor">@color/black</item>
+    </style>
+    <style name="Theme.CamarasMadridLight.CobertorPopup"
+        parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:titleTextColor">@color/black</item>
+    </style>
+    <style name="Theme.CamarasMadridDark.SinActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.CamarasMadridDark.CobertorAppBar"
+        parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:titleTextColor">@color/white</item>
+    </style>
+    <style name="Theme.CamarasMadridDark.CobertorPopup"
+        parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:titleTextColor">@color/white</item>
+    </style>
+    <style name="Theme.CamarasMadridDark.MyToolbar" parent="Widget.MaterialComponents.Toolbar">
+        <item name="titleTextColor">@color/white</item>
+    </style>
+    <style name="Theme.CamarasMadridLight.MyToolbar" parent="Widget.MaterialComponents.Toolbar">
+        <item name="titleTextColor">@color/black</item>
+    </style>
+</resources>

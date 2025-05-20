@@ -1,0 +1,14 @@
+<!--
+  Grupo: 10
+  Alumnos:
+  - Darío Márquez Ibáñez
+  - David Márquez Ibáñez
+ -->
+<resources>
+    <string name="app_name">10 DAM</string>
+    <string name="title_activity_maps">10 DAM</string>
+    <string name="mode_normal">Vista Normal</string>
+    <string name="mode_satellite">Vista Satélite</string>
+    <string name="mode_hybrid">Vista Híbrida</string>
+    <string name="mode_terrain">Vista Terráquea</string>
+</resources>

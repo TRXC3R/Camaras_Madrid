@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Grupo: 10
+  Alumnos:
+  - Darío Márquez Ibáñez
+  - David Márquez Ibáñez
+ -->
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/search"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="Buscar"
+        app:showAsAction="ifRoom"
+        android:enabled="false"/>
+    <item
+        android:id="@+id/order"
+        android:icon="@android:drawable/ic_menu_sort_by_size"
+        android:title="Ordenar"
+        app:showAsAction="ifRoom"
+        android:enabled="false"/>
+    <item
+        android:id="@+id/download"
+        android:icon="@android:drawable/stat_sys_download"
+        android:title="Descargar Lista"
+        app:showAsAction="ifRoom"
+        android:enabled="false"/>
+    <item
+        android:id="@+id/mostrarUbicacion"
+        android:checkable="true"
+        android:title="Mostrar Ubicación"
+        android:enabled="false"/>
+
+    <item
+        android:id="@+id/app_theme_switch"
+        android:title="Cambiar tema"
+        app:showAsAction="never"
+        android:enabled="false"/>
+
+    <group
+        android:id="@+id/grupo"
+        android:checkableBehavior="single" >
+        <item
+            android:checked="true"
+            android:id="@+id/mostrarUna"
+            android:title="Mostrar Una"
+            android:enabled="false"/>
+        <item
+            android:id="@+id/mostrarTodas"
+            android:title="Mostrar Todas"
+            android:enabled="false"/>
+        <item
+            android:id="@+id/mostrarAgrupación"
+            android:title="Mostrar Agrupación"
+            android:enabled="false"/>
+    </group>
+</menu>

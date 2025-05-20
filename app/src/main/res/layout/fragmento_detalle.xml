@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Grupo: 10
+  Alumnos:
+  - Darío Márquez Ibáñez
+  - David Márquez Ibáñez
+ -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragmentoDetalle"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:background="@color/fondo"
+    tools:context="dam.camarasmadrid2410.MainActivity">
+    <LinearLayout
+        android:id="@+id/layoutPBCircular"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/fondo">
+        <ProgressBar
+            android:id="@+id/barraInfinita"
+            style="?android:attr/progressBarStyle"
+            android:foregroundTint="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imagen"
+        android:layout_width="wrap_content"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="@color/fondo">
+    <Button
+        android:id="@+id/buttonClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:textColor="?attr/colorPrimaryVariant"
+        android:text="Cerrar"
+        android:onClick="cerrar"/>
+    <Button
+        android:id="@+id/buttonUbicacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:textColor="?attr/colorPrimaryVariant"
+        android:text="Mostrar ubicacion "
+        android:onClick="mostrarUbicacion"/>
+
+    <Button
+        android:id="@+id/buttonUpdate"
+        android:layout_width="80dp"
+        android:layout_height="47dp"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:drawableBottom="@android:drawable/ic_popup_sync" />
+
+</LinearLayout>
+
+</LinearLayout>
